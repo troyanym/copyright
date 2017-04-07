@@ -27,10 +27,6 @@
     </div>
 </div>
 
-<link href="/assets/libs/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" property="stylesheet"  />
-<link href="/assets/libs/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" property="stylesheet"  />
-<link href="/assets/libs/owl-carousel/owl.theme.default.min.css" rel="stylesheet" type="text/css" property="stylesheet"  />
-
 <!-- Scripts -->
 <script type="text/javascript" src="/assets/libs/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/assets/libs/bootstrap/bootstrap.js"></script>

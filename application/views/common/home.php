@@ -52,7 +52,7 @@
                     <textarea class="form-control" name="client_ask" placeholder="Какой возник вопрос?" type="text"></textarea>
                 </div>
             </div>
-            <div class="load-status"><span class="loading">Отправка...</span></div>
+            <div class="loading-status"><span class="loading">Отправка...</span></div>
             <button type="submit" class="btn btn-block">Задать вопрос</button>
         </form>
     </div>

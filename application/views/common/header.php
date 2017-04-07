@@ -16,6 +16,9 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <!-- links -->
     <link href="/assets/catalog/css/style.css" rel="stylesheet" type="text/css" property="stylesheet"  />
+    <link href="/assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" property="stylesheet"  />
+    <link href="/assets/libs/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" property="stylesheet"  />
+    <link href="/assets/libs/owl-carousel/owl.theme.default.min.css" rel="stylesheet" type="text/css" property="stylesheet"  />
 
     <!--[if lt IE 9]>
     <script src="//css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
