@@ -1,0 +1,580 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    background-color: white;
+}
+
+img {
+    max-width:100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+p, li, span {
+    line-height: 25px;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.section.header .subtitle {
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+ul.servicelist {
+    position: relative;
+    margin-top: 20px;
+    font-size: 17px;
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
+
+ul.servicelist li {
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+ul.servicelist li:before {
+    content: '';
+    display: block;
+    background: url('../images/check_flag.png');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    background-size: cover;
+}
+
+a.btn {
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: solid 2px white;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+a.btn:hover {
+    background:white;
+    color: black;
+
+}
+
+.head-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.head-section .title {
+    display: inline-block;
+    font-size: 36px;
+    padding: 0px 30px 25px 30px;
+    border-bottom: 2px solid grey;
+    line-height: 36px;
+}
+
+.head-section .subtitle {
+    display: block;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+section.header {
+    background-image: url('../images/copy_header.jpg');
+    color: white;
+}
+
+section.work-price {
+    background-image: url('../images/cost_copyright.jpg');
+    color: white;
+}
+
+section.work-price:before {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+
+section.myservice {
+    background: #ececec;
+}
+
+section.header:before {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(29, 30, 34, 0.3));
+}
+
+section.askme {
+    background-image: url('../images/ask-meet.jpg');
+    color: white;
+    min-height: initial;
+}
+
+section.askme .head-section {
+    margin-bottom: 0px;
+}
+
+section.askme:before {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(29, 30, 34, 0.3));
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 600px;
+}
+
+.slide {
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+}
+
+.slide:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+}
+
+.slide:before {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.section-inner {
+    position: relative;
+}
+
+.md-icon {
+    text-align: center;
+}
+
+.md-icon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -o-border-radius: 90px;
+}
+
+figcaption.title {
+    font-size: 19px;
+    padding: 15px 0px;
+}
+
+figcaption {
+    line-height: 21px;
+}
+
+.col-icon {
+    margin: 30px 0px;
+}
+
+/** My works plitka **/
+.box-mywork {
+    overflow: hidden;
+    height: 250px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    float: left;
+    position: relative;
+}
+
+.pf_img {
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pf_hover {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.5s ease-out 0s;
+    width: 100%;
+}
+
+.pf_hover::before {
+    background: #121314;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: all 0.65s ease 0s;
+    width: 200%;
+    text-align: center;
+}
+
+.pf_hover .lms2_container {
+    position: relative;
+    top: 0px;
+    height: 100%;
+}
+
+.lms2b_desc {
+    color: #FFF;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 15px 0 0 0;
+    line-height: 18px;
+}
+
+.lms2b_btn {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.lms2b_btn a.btn {
+    padding: 7px 20px;
+}
+
+.box-mywork:hover .pf_hover {
+    opacity: 1;
+}
+
+.box-mywork:hover .pf_hover:before {
+    height:200%;
+}
+
+.owl-stage-outer {
+    height: 250px;
+}
+
+.owl-nav {
+    margin-top: 15px;
+}
+
+.owl-nav img {
+    width:35px;
+}
+
+.owl-dots {
+    padding:15px 0px;
+}
+
+.owl-nav .owl-prev {
+    float: left;
+}
+
+.owl-nav .owl-next {
+    float: right;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    opacity: 0.7;
+}
+
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+    opacity: 1;
+}
+
+.price-col-left {
+    border-right: 1px solid white;
+}
+
+ul.price {
+    margin-top: 10px;
+    list-style-type: circle;
+}
+
+ul.price li {
+    margin-left: 15px;
+}
+
+#footer {
+    padding-top: 30px;
+    background: #ececec;
+}
+
+#footer .say {
+    font-size: 17px;
+    color: #837f7f;
+}
+
+#footer a.back {
+    display: block;
+    margin-top: 20px;
+}
+
+
+#footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #d5d1d1;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#footer img.copyright {
+    float: right;
+    width: 200px;
+}
+
+.modal-form {
+    width: 600px;
+    border-radius: 5px;
+    border: 3px #000 solid;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -300px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+}
+
+.modal-content {
+    padding: 30px;
+    border: 1px solid #999;
+    border-radius: 0;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0,0,0,.5);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.5);
+}
+
+.modal-content .modal-header {
+    padding: 0 0 20px 0;
+    border-bottom: transparent;
+}
+
+.modal-content .modal-header .modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    text-align: center;
+    color: #333;
+}
+
+.modal-content .modal-body .modal-subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.modal-content .modal-body {
+    padding: 0 65px 40px;
+}
+
+.modal-content .btn {
+    color: #787575;
+    font-weight: bold;
+}
+
+.modal-content .btn:hover {
+    background: #d5d5d5;
+}
+
+.overlay {
+    z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position:fixed; /* всегдa перекрывaет весь сaйт */
+    background-color:#000; /* чернaя */
+    opacity:0.8; /* нo немнoгo прoзрaчнa */
+    -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+    filter:alpha(opacity=80);
+    width:100%;
+    height:100%; /* рaзмерoм вo весь экрaн */
+    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    left:0;
+    display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+.modal_close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: grey;
+    font-size: 19px;
+    z-index: 1;
+}
+
+#request_copyright {
+    margin-top: -200px;
+}
+
+#report_close {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.modal-report {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 300px;
+    min-height: 60px;
+    background: white;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 0;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0,0,0,.5);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.5);
+    z-index: 3;
+    display: none;
+}
+
+.modal-report span {
+    position: relative;
+    padding-left: 35px;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.modal-report span:before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+.modal-report span.error:before {
+    background: url('../images/error.png') no-repeat left top;
+    background-size: cover;
+}
+
+.modal-report span.success:before {
+    background: url('../images/success.png') no-repeat left top;
+    background-size: cover;
+}
+
+.loading-status {
+    text-align: center;
+    display: none;
+}
+
+.loading {
+    position: relative;
+    padding-left: 35px;
+    height: 25px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.loading:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../images/preloader.gif') no-repeat;
+    background-size: cover;
+    left: 0px;
+    top:0px;
+}
+
+@media screen and (max-width: 767px) {
+    .price-col-left {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .modal-report {
+        top: 10px;
+        right: 10px;
+        maw-width: 100%;
+    }
+
+    a.btn {
+        padding: 10px;
+    }
+
+    .modal-form {
+        width: 96%;
+        margin: 0px 2%;
+        top: 30px !important;
+        left: 0px;
+        margin-top: 0px !important;
+    }
+
+    .modal-content {
+        padding: 40px 15px 20px;
+    }
+}
