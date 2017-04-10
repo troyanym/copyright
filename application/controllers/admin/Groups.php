@@ -21,14 +21,14 @@ class Groups extends Admin_Controller
 
     public function index()
     {
-        $this->data['page_title'] = 'Groups';
+        $this->data['page_title'] = 'Группы';
         $this->data['groups'] = $this->ion_auth->groups()->result();
         $this->render('admin/groups/list_groups_view');
     }
 
     public function create()
     {
-        $this->data['page_title'] = 'Create group';
+        $this->data['page_title'] = 'Создать группу';
         $this->load->library('form_validation');
         $this->form_validation->set_rules('group_name','Group name','trim|required|is_unique[groups.name]');
         $this->form_validation->set_rules('group_description','Group description','trim|required');
@@ -51,7 +51,7 @@ class Groups extends Admin_Controller
     public function edit($group_id = NULL)
     {
         $group_id = $this->input->post('group_id') ? $this->input->post('group_id') : $group_id;
-        $this->data['page_title'] = 'Edit group';
+        $this->data['page_title'] = 'Изменить группу';
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('group_name','Group name','trim|required');

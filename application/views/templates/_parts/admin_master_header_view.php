@@ -32,10 +32,22 @@ if($this->ion_auth->logged_in()) {
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand"
-                   href="<?php echo site_url('admin');?>"><?php echo $this->config->item('cms_title');?></a>
+                   href="<?php echo base_url('admin');?>"><?php echo $this->config->item('cms_title');?></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand"
+                           href="<?php echo base_url('admin');?>">Панель</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Блоки</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="<?php echo base_url('admin/user/profile');?>">Список</a></li>
+                            <li><a href="<?php echo base_url('admin/user/logout');?>">Категории</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<?php echo base_url('');?>">Сайт</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php print_r($this->ion_auth->user()->row()->username);?> <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -43,14 +55,14 @@ if($this->ion_auth->logged_in()) {
                             if($this->ion_auth->is_admin())
                             {
                                 ?>
-                                <li><a href="<?php echo site_url('admin/groups'); ?>">Groups</a></li>
-                                <li><a href="<?php echo site_url('admin/users'); ?>">Users</a></li>
+                                <li><a href="<?php echo base_url('admin/groups'); ?>">Группы</a></li>
+                                <li><a href="<?php echo base_url('admin/users'); ?>">Пользователи</a></li>
                                 <?php
                             }
                             ?>
-                            <li><a href="<?php echo site_url('admin/user/profile');?>">Profile page</a></li>
+                            <li><a href="<?php echo base_url('admin/user/profile');?>">Профиль</a></li>
                             <li class="divider"></li>
-                            <li><a href="<?php echo site_url('admin/user/logout');?>">Logout</a></li>
+                            <li><a href="<?php echo base_url('admin/user/logout');?>">Выход</a></li>
                         </ul>
                     </li>
                 </ul>

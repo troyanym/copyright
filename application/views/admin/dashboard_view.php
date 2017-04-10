@@ -8,5 +8,5 @@
 ?>
 
 <div id="container">
-    <h1>Welcome to the Dashboard!</h1>
+    <h1>Добро пожаловать в админ панель!</h1>
 </div>

@@ -97,7 +97,7 @@ class Auth extends CI_Controller {
 	// log the user out
 	public function logout()
 	{
-		$this->data['title'] = "Logout";
+		$this->data['title'] = "Выход";
 
 		// log the user out
 		$logout = $this->ion_auth->logout();

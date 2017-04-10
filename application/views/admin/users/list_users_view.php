@@ -10,7 +10,7 @@
 <div class="container" style="margin-top: 60px;">
     <div class="row">
         <div class="col-lg-12">
-            <a href="<?php echo site_url('admin/users/create');?>" class="btn btn-primary">Create user</a>
+            <a href="<?php echo site_url('admin/users/create');?>" class="btn btn-primary">Создать пользователя</a>
         </div>
     </div>
     <div class="row">
@@ -19,7 +19,7 @@
             if(!empty($users))
             {
                 echo '<table class="table table-hover table-bordered table-condensed">';
-                echo '<tr><td>ID</td><td>Username</td></td><td>Name</td><td>Email</td><td>Last login</td><td>Operations</td></tr>';
+                echo '<tr><td>ID</td><td>Логин</td></td><td>Имя</td><td>E-mail</td><td>Фамилия</td><td>Операции</td></tr>';
                 foreach($users as $user)
                 {
                     echo '<tr>';

@@ -14,21 +14,21 @@ class Users extends Admin_Controller
         parent::__construct();
         if(!$this->ion_auth->in_group('admin'))
         {
-            $this->session->set_flashdata('message','You are not allowed to visit the Groups page');
+            $this->session->set_flashdata('message','У вас нет прав к группам пользователя');
             redirect('admin','refresh');
         }
     }
 
     public function index($group_id = NULL)
     {
-        $this->data['page_title'] = 'Users';
+        $this->data['page_title'] = 'Пользователи';
         $this->data['users'] = $this->ion_auth->users($group_id)->result();
         $this->render('admin/users/list_users_view');
     }
 
     public function create()
     {
-        $this->data['page_title'] = 'Create user';
+        $this->data['page_title'] = 'Создать пользователя';
         $this->load->library('form_validation');
         $this->form_validation->set_rules('first_name','First name','trim');
         $this->form_validation->set_rules('last_name','Last name','trim');
@@ -68,18 +68,18 @@ class Users extends Admin_Controller
     public function edit($user_id = NULL)
     {
         $user_id = $this->input->post('user_id') ? $this->input->post('user_id') : $user_id;
-        $this->data['page_title'] = 'Edit user';
+        $this->data['page_title'] = 'Изменить пользователя';
         $this->load->library('form_validation');
 
-        $this->form_validation->set_rules('first_name','First name','trim');
-        $this->form_validation->set_rules('last_name','Last name','trim');
-        $this->form_validation->set_rules('company','Company','trim');
-        $this->form_validation->set_rules('phone','Phone','trim');
-        $this->form_validation->set_rules('username','Username','trim|required');
-        $this->form_validation->set_rules('email','Email','trim|required|valid_email');
-        $this->form_validation->set_rules('password','Password','min_length[6]');
-        $this->form_validation->set_rules('password_confirm','Password confirmation','matches[password]');
-        $this->form_validation->set_rules('groups[]','Groups','required|integer');
+        $this->form_validation->set_rules('first_name','Имя','trim');
+        $this->form_validation->set_rules('last_name','Фамилия','trim');
+        $this->form_validation->set_rules('company','Компания','trim');
+        $this->form_validation->set_rules('phone','Телефон','trim');
+        $this->form_validation->set_rules('username','Логин','trim|required');
+        $this->form_validation->set_rules('email','E-mail','trim|required|valid_email');
+        $this->form_validation->set_rules('password','Пароль','min_length[6]');
+        $this->form_validation->set_rules('password_confirm','Повторите пароль','matches[password]');
+        $this->form_validation->set_rules('groups[]','Группы','required|integer');
         $this->form_validation->set_rules('user_id','User ID','trim|integer|required');
 
         if($this->form_validation->run() === FALSE)

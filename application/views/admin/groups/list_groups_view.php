@@ -10,7 +10,7 @@
 <div class="container" style="margin-top: 60px;">
     <div class="row">
         <div class="col-lg-12">
-            <a href="<?php echo site_url('admin/groups/create');?>" class="btn btn-primary">Create group</a>
+            <a href="<?php echo site_url('admin/groups/create');?>" class="btn btn-primary">Создать группу</a>
         </div>
     </div>
     <div class="row">
@@ -19,7 +19,7 @@
             if(!empty($groups))
             {
                 echo '<table class="table table-hover table-bordered table-condensed">';
-                echo '<tr><td>ID</td><td>Group name</td></td><td>Group description</td><td>Operations</td></tr>';
+                echo '<tr><td>ID</td><td>Название</td></td><td>Описание</td><td>Операции</td></tr>';
                 foreach($groups as $group)
                 {
                     echo '<tr>';
