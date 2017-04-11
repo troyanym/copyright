@@ -125,6 +125,8 @@
                         <figcaption class="subtitle">СЕО-оптимизированные статьи – это один из лучших методов «белого» продвижения, который увеличивает посещаемость сайта.</figcaption>
                     </figure>
                 </div>
+            </div>
+            <div class="row-icons row">
                 <div class="col-icon col-sm-4 col-md-4">
                     <figure class="md-icon">
                         <img title="icon image" src="/assets/catalog/images/icons/booklen.jpg" />
