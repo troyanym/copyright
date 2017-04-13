@@ -13,7 +13,7 @@
         <div class="modal-header">
             <h4 class="modal-title">Пожалуйста заполните нужные поля</h4>
         </div>
-        <form class="ajax-form" action="/pages/send_req" method="post">
+        <form class="ajax-form" action="/mail/send_req" method="post">
             <div class="contact-form">
                 <div class="form-group field-form-name required">
                     <input required="required" class="form-control" name="client_name" placeholder="Имя" type="text">
@@ -40,7 +40,7 @@
         <div class="modal-header">
             <h4 class="modal-title">Пожалуйста заполните нужные поля</h4>
         </div>
-        <form class="ajax-form" action="/pages/send_ask" method="post">
+        <form class="ajax-form" action="/mail/send_ask" method="post">
             <div class="contact-form">
                 <div class="form-group field-form-name required">
                     <input required="required" class="form-control" name="client_name" placeholder="Имя" type="text">

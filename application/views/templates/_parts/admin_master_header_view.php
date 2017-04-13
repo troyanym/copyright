@@ -14,14 +14,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $page_title;?></title>
+
     <link href="/assets/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/admin/css/style.css" rel="stylesheet">
+    <link href="/assets/admin/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/admin/css/font-awesome/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="/assets/admin/js/elFinder/css/elfinder.min.css" rel="stylesheet">
+    <link href="/assets/admin/js/elFinder/css/theme.css" rel="stylesheet">
+
+
+
+    <script type="text/javascript" src="/assets/admin/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/assets/admin/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/assets/admin/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/admin/js/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/assets/admin/js/elFinder/js/elfinder.min.js"></script>
+    <script type="text/javascript" src="/assets/admin/js/custom.js"></script>
+
     <?php echo $before_head;?>
 </head>
 <body>
 <?php
 if($this->ion_auth->logged_in()) {
     ?>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -39,10 +55,11 @@ if($this->ion_auth->logged_in()) {
                     <li><a class="navbar-brand"
                            href="<?php echo base_url('admin');?>">Панель</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Блоки</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Лендинг</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo base_url('admin/user/profile');?>">Список</a></li>
-                            <li><a href="<?php echo base_url('admin/user/logout');?>">Категории</a></li>
+                            <li><a href="<?php echo base_url('admin/user/logout');?>">Шапка</a></li>
+                            <li><a href="<?php echo base_url('admin/blocks');?>">Блоки</a></li>
+                            <li><a href="<?php echo base_url('admin/user/logout');?>">Подвал</a></li>
                         </ul>
                     </li>
                 </ul>

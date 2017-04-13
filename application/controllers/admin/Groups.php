@@ -14,7 +14,7 @@ class Groups extends Admin_Controller
         parent::__construct();
         if(!$this->ion_auth->in_group('admin'))
         {
-            $this->session->set_flashdata('message','You are not allowed to visit the Groups page');
+            $this->session->set_flashdata('message','У вас нет прав к группам пользователя');
             redirect('admin','refresh');
         }
     }

@@ -12,7 +12,7 @@ class MY_Controller extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->data['page_title'] = 'CI App';
+        $this->data['page_title'] = 'Admin page';
         $this->data['before_head'] = '';
         $this->data['before_body'] ='';
     }
@@ -49,7 +49,7 @@ class Admin_Controller extends MY_Controller
         {
             $this->data['current_user_menu'] = $this->load->view('templates/_parts/user_menu_admin_view.php', NULL, TRUE);
         }
-        $this->data['page_title'] = 'CI App - Dashboard';
+        $this->data['page_title'] = 'Copyright - Dashboard';
     }
     protected function render($the_view = NULL, $template = 'admin_master')
     {

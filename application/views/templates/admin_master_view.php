@@ -8,7 +8,7 @@
 
 $this->load->view('templates/_parts/admin_master_header_view'); ?>
     <div class="container">
-        <div class="main-content" style="padding-top:40px;">
+        <div class="main-content">
             <?php echo $the_view_content; ?>
         </div>
     </div>
